@@ -29,7 +29,7 @@ body {
     background-color: white;
     background-image: url("images/bg-pattern-card.svg");
     background-repeat: no-repeat;
-
+    background-size: 100% 145px;
     /* Corner for the card */
     border-radius: 10px;
     width: 300px;
