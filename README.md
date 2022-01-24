@@ -1,4 +1,4 @@
 # Header 
-Nothing much in here, just to try out.....
+Nothing much in here, just checking out git.
 ## SubHeader
-Uhm just checking if this comes out as a sub-head.
+Uhm, just checking if this comes out as a sub-head.
