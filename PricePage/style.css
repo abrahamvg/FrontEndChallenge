@@ -1,0 +1,227 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+:root{
+    --secondary-color:  #00a37e;
+    --secondary-color-hover:  #028f6e;
+}
+body{
+    background-color: white ;
+    font-family: Lato;
+    color: #4c525a;;
+    
+}
+.container-navbar{
+    width: 100%;
+    box-shadow: 0 -19px 25px 0 rgba(0, 0, 0, 0.2);
+}
+.navbar{
+    width: 100%;
+    max-width: 70rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 75%;
+}
+.main-nav a{
+    text-decoration: none;
+    color: #4c4d5f;
+    
+}
+.main-nav a:hover{
+    color: black
+}
+
+.main-nav-left{
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 60px;
+}
+.main-nav-right{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+button{
+    font-family: 'Proximanova opt',sans-serif;
+    position: relative;
+    background-color: var(--secondary-color);
+    color:white;
+    padding: 12px;
+    border: 0px;
+    border-radius: 5px;
+
+    width: 100px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color-hover);
+    
+}
+.login{
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+}
+.login:hover{
+    background-color: var(--secondary-color-hover);
+    color:white;
+    border: 2px solid transparent;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+  }
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background-color: var(--secondary-color);
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px var(--secondary-color);
+  }
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.price{
+    padding-top: 110px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 70rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.header h1{
+    margin: 40px;
+    font-size: 50px;
+    font-family: 'Italiana', sans-serif;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+.price-duration{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 20%;
+    width: 100%;
+}
+.price-content{
+    display:flex;
+    flex-direction: row;
+    gap: 25px;
+
+}
+.price-details{
+    width: 35%;
+    height: 600px;
+    border: 1px solid hsla(237, 11%, 34%, 0.129);
+    border-radius: 4px;
+    padding: 40px 40px 30px 40px;
+    margin-bottom: 100px;
+    box-sizing: border-box; 
+    box-shadow: 0 0 68px 0 rgba(2,4,69,.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.price-details-heading h2{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif
+
+}
+.price-details-heading p{
+    font-size: 0.75rem;
+    color: #6c6f72;
+}
+
+.price-details-price{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-bottom: 3px solid var(--secondary-color);
+    font-family: 'Montserrat', sans-serif
+}
+.price-number{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.price-number sup{
+    font-size: 1.7rem;
+}
+.plan-features{
+    margin-top: 40px;
+}
+.tick-div{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.tick{
+    margin-right:20px;
+}
+
+.plan-button{
+    margin-top: auto;
+    width:100%
+}
